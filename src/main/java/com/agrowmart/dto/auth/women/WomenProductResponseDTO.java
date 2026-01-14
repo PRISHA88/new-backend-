@@ -1,0 +1,28 @@
+package com.agrowmart.dto.auth.women;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.List;
+
+public record WomenProductResponseDTO(
+        Long id,
+        String uuid,
+        Long sellerId,
+        String sellerName,
+        String name,
+        String category,
+        String description,
+       
+        BigDecimal minPrice,
+        BigDecimal maxPrice,
+        Integer stock,
+        String unit,
+        List<String> imageUrls,
+        Boolean isAvailable,
+        LocalDateTime createdAt,
+     // ============ NEW FIELDS ============
+        String ingredients,
+        String shelfLife,
+        String packagingType,
+        String productInfo
+) {}
